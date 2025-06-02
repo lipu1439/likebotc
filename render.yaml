@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: likebotc
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: your_bot_token_here
+      - key: MONGO_URI
+        value: your_mongodb_uri_here
+      - key: SHORTNER_API
+        value: your_shortener_api_key_here
+      - key: FLASK_URL
+        value: your_flask_app_url_here
+      - key: LIKE_API_URL
+        value: your_like_api_url_here
+      - key: HOW_TO_VERIFY_URL
+        value: your_how_to_verify_url_here
+      - key: VIP_ACCESS_URL
+        value: your_vip_access_url_here
+      - key: ADMIN_IDS
+        value: "5611207351"  # Replace with actual admin IDs
